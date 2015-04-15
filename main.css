@@ -407,7 +407,8 @@
 
 body {
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  background-color: #fff9d2; }
 
 #map {
   width: 100%;
@@ -434,3 +435,6 @@ body {
   width: 256px;
   height: 192px;
   background-repeat: no-repeat; }
+
+.leaflet-container {
+  background-color: transparent; }
