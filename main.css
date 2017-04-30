@@ -1,21 +1,38 @@
-@import url("//hello.myfonts.net/count/2df860");
 /* required styles */
-.leaflet-map-pane, .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-tile-pane, .leaflet-tile-container, .leaflet-overlay-pane, .leaflet-shadow-pane, .leaflet-marker-pane, .leaflet-popup-pane, .leaflet-overlay-pane svg, .leaflet-zoom-box, .leaflet-image-layer, .leaflet-layer {
+@import url("//hello.myfonts.net/count/2df860");
+.leaflet-map-pane,
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-tile-pane,
+.leaflet-tile-container,
+.leaflet-overlay-pane,
+.leaflet-shadow-pane,
+.leaflet-marker-pane,
+.leaflet-popup-pane,
+.leaflet-overlay-pane svg,
+.leaflet-zoom-box,
+.leaflet-image-layer,
+.leaflet-layer {
   position: absolute;
   left: 0;
   top: 0; }
 
 .leaflet-container {
   overflow: hidden;
-  -ms-touch-action: none; }
+  -ms-touch-action: none;
+  touch-action: none; }
 
-.leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow {
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
   -webkit-user-drag: none; }
 
-.leaflet-marker-icon, .leaflet-marker-shadow {
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
   display: block; }
 
 /* map is broken in FF if you have max-width: 100% on tiles */
@@ -74,7 +91,8 @@
   z-index: 7;
   pointer-events: auto; }
 
-.leaflet-top, .leaflet-bottom {
+.leaflet-top,
+.leaflet-bottom {
   position: absolute;
   z-index: 1000;
   pointer-events: none; }
@@ -111,14 +129,16 @@
   margin-right: 10px; }
 
 /* zoom and fade animations */
-.leaflet-fade-anim .leaflet-tile, .leaflet-fade-anim .leaflet-popup {
+.leaflet-fade-anim .leaflet-tile,
+.leaflet-fade-anim .leaflet-popup {
   opacity: 0;
   -webkit-transition: opacity 0.2s linear;
   -moz-transition: opacity 0.2s linear;
   -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear; }
 
-.leaflet-fade-anim .leaflet-tile-loaded, .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
+.leaflet-fade-anim .leaflet-tile-loaded,
+.leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
   opacity: 1; }
 
 .leaflet-zoom-anim .leaflet-zoom-animated {
@@ -127,7 +147,9 @@
   -o-transition: -o-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
   transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1); }
 
-.leaflet-zoom-anim .leaflet-tile, .leaflet-pan-anim .leaflet-tile, .leaflet-touching .leaflet-zoom-animated {
+.leaflet-zoom-anim .leaflet-tile,
+.leaflet-pan-anim .leaflet-tile,
+.leaflet-touching .leaflet-zoom-animated {
   -webkit-transition: none;
   -moz-transition: none;
   -o-transition: none;
@@ -144,10 +166,12 @@
   cursor: -webkit-grab;
   cursor: -moz-grab; }
 
-.leaflet-popup-pane, .leaflet-control {
+.leaflet-popup-pane,
+.leaflet-control {
   cursor: auto; }
 
-.leaflet-dragging .leaflet-container, .leaflet-dragging .leaflet-clickable {
+.leaflet-dragging .leaflet-container,
+.leaflet-dragging .leaflet-clickable {
   cursor: move;
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing; }
@@ -176,7 +200,8 @@
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
   border-radius: 4px; }
 
-.leaflet-bar a, .leaflet-bar a:hover {
+.leaflet-bar a,
+.leaflet-bar a:hover {
   background-color: #fff;
   border-bottom: 1px solid #ccc;
   width: 26px;
@@ -187,7 +212,8 @@
   text-decoration: none;
   color: black; }
 
-.leaflet-bar a, .leaflet-control-layers-toggle {
+.leaflet-bar a,
+.leaflet-control-layers-toggle {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block; }
@@ -215,7 +241,8 @@
   line-height: 30px; }
 
 /* zoom control */
-.leaflet-control-zoom-in, .leaflet-control-zoom-out {
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
   font: bold 18px 'Lucida Console', Monaco, monospace;
   text-indent: 1px; }
 
@@ -247,7 +274,8 @@
   width: 44px;
   height: 44px; }
 
-.leaflet-control-layers .leaflet-control-layers-list, .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+.leaflet-control-layers .leaflet-control-layers-list,
+.leaflet-control-layers-expanded .leaflet-control-layers-toggle {
   display: none; }
 
 .leaflet-control-layers-expanded .leaflet-control-layers-list {
@@ -278,7 +306,8 @@
   background: rgba(255, 255, 255, 0.7);
   margin: 0; }
 
-.leaflet-control-attribution, .leaflet-control-scale-line {
+.leaflet-control-attribution,
+.leaflet-control-scale-line {
   padding: 0 5px;
   color: #333; }
 
@@ -288,7 +317,8 @@
 .leaflet-control-attribution a:hover {
   text-decoration: underline; }
 
-.leaflet-container .leaflet-control-attribution, .leaflet-container .leaflet-control-scale {
+.leaflet-container .leaflet-control-attribution,
+.leaflet-container .leaflet-control-scale {
   font-size: 11px; }
 
 .leaflet-left .leaflet-control-scale {
@@ -318,10 +348,13 @@
 .leaflet-control-scale-line:not(:first-child):not(:last-child) {
   border-bottom: 2px solid #777; }
 
-.leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+.leaflet-touch .leaflet-control-attribution,
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
   box-shadow: none; }
 
-.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
   border: 2px solid rgba(0, 0, 0, 0.2);
   background-clip: padding-box; }
 
@@ -360,7 +393,8 @@
   -o-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
   background: white;
   box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4); }
 
@@ -398,7 +432,10 @@
 .leaflet-oldie .leaflet-popup-tip-container {
   margin-top: -1px; }
 
-.leaflet-oldie .leaflet-control-zoom, .leaflet-oldie .leaflet-control-layers, .leaflet-oldie .leaflet-popup-content-wrapper, .leaflet-oldie .leaflet-popup-tip {
+.leaflet-oldie .leaflet-control-zoom,
+.leaflet-oldie .leaflet-control-layers,
+.leaflet-oldie .leaflet-popup-content-wrapper,
+.leaflet-oldie .leaflet-popup-tip {
   border: 1px solid #999; }
 
 /* div icon */
@@ -494,74 +531,74 @@
 
 @font-face {
   font-family: 'neutonextralight';
-  src: url('fonts/neuton-extralight-webfont.eot');
-  src: url('fonts/neuton-extralight-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuton-extralight-webfont.woff2') format('woff2'), url('fonts/neuton-extralight-webfont.woff') format('woff'), url('fonts/neuton-extralight-webfont.ttf') format('truetype'), url('fonts/neuton-extralight-webfont.svg#neutonlight') format('svg');
+  src: url("fonts/neuton-extralight-webfont.eot");
+  src: url("fonts/neuton-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/neuton-extralight-webfont.woff2") format("woff2"), url("fonts/neuton-extralight-webfont.woff") format("woff"), url("fonts/neuton-extralight-webfont.ttf") format("truetype"), url("fonts/neuton-extralight-webfont.svg#neutonlight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'neutonregular';
-  src: url('fonts/neuton-regular-webfont.eot');
-  src: url('fonts/neuton-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuton-regular-webfont.woff2') format('woff2'), url('fonts/neuton-regular-webfont.woff') format('woff'), url('fonts/neuton-regular-webfont.ttf') format('truetype'), url('fonts/neuton-regular-webfont.svg#neutonregular') format('svg');
+  src: url("fonts/neuton-regular-webfont.eot");
+  src: url("fonts/neuton-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/neuton-regular-webfont.woff2") format("woff2"), url("fonts/neuton-regular-webfont.woff") format("woff"), url("fonts/neuton-regular-webfont.ttf") format("truetype"), url("fonts/neuton-regular-webfont.svg#neutonregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'neutonitalic';
-  src: url('fonts/neuton-italic-webfont.eot');
-  src: url('fonts/neuton-italic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuton-italic-webfont.woff2') format('woff2'), url('fonts/neuton-italic-webfont.woff') format('woff'), url('fonts/neuton-italic-webfont.ttf') format('truetype'), url('fonts/neuton-italic-webfont.svg#neutonregular') format('svg');
+  src: url("fonts/neuton-italic-webfont.eot");
+  src: url("fonts/neuton-italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/neuton-italic-webfont.woff2") format("woff2"), url("fonts/neuton-italic-webfont.woff") format("woff"), url("fonts/neuton-italic-webfont.ttf") format("truetype"), url("fonts/neuton-italic-webfont.svg#neutonregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 /* @import must be at top of file, otherwise CSS will not work */
 @font-face {
   font-family: 'LuloCleanOne';
-  src: url('fonts/2DF860_1_0.eot');
-  src: url('fonts/2DF860_1_0.eot?#iefix') format('embedded-opentype'), url('fonts/2DF860_1_0.woff2') format('woff2'), url('fonts/2DF860_1_0.woff') format('woff'), url('fonts/2DF860_1_0.ttf') format('truetype'); }
+  src: url("fonts/2DF860_1_0.eot");
+  src: url("fonts/2DF860_1_0.eot?#iefix") format("embedded-opentype"), url("fonts/2DF860_1_0.woff2") format("woff2"), url("fonts/2DF860_1_0.woff") format("woff"), url("fonts/2DF860_1_0.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'LuloCleanOne-Bold';
-  src: url('fonts/2DF860_2_0.eot');
-  src: url('fonts/2DF860_2_0.eot?#iefix') format('embedded-opentype'), url('fonts/2DF860_2_0.woff2') format('woff2'), url('fonts/2DF860_2_0.woff') format('woff'), url('fonts/2DF860_2_0.ttf') format('truetype'); }
+  src: url("fonts/2DF860_2_0.eot");
+  src: url("fonts/2DF860_2_0.eot?#iefix") format("embedded-opentype"), url("fonts/2DF860_2_0.woff2") format("woff2"), url("fonts/2DF860_2_0.woff") format("woff"), url("fonts/2DF860_2_0.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'LuloCleanThree';
-  src: url('fonts/2DF860_3_0.eot');
-  src: url('fonts/2DF860_3_0.eot?#iefix') format('embedded-opentype'), url('fonts/2DF860_3_0.woff2') format('woff2'), url('fonts/2DF860_3_0.woff') format('woff'), url('fonts/2DF860_3_0.ttf') format('truetype'); }
+  src: url("fonts/2DF860_3_0.eot");
+  src: url("fonts/2DF860_3_0.eot?#iefix") format("embedded-opentype"), url("fonts/2DF860_3_0.woff2") format("woff2"), url("fonts/2DF860_3_0.woff") format("woff"), url("fonts/2DF860_3_0.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'LuloCleanOutline';
-  src: url('fonts/2DF860_4_0.eot');
-  src: url('fonts/2DF860_4_0.eot?#iefix') format('embedded-opentype'), url('fonts/2DF860_4_0.woff2') format('woff2'), url('fonts/2DF860_4_0.woff') format('woff'), url('fonts/2DF860_4_0.ttf') format('truetype'); }
+  src: url("fonts/2DF860_4_0.eot");
+  src: url("fonts/2DF860_4_0.eot?#iefix") format("embedded-opentype"), url("fonts/2DF860_4_0.woff2") format("woff2"), url("fonts/2DF860_4_0.woff") format("woff"), url("fonts/2DF860_4_0.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'LuloCleanOutline-Bold';
-  src: url('fonts/2DF860_5_0.eot');
-  src: url('fonts/2DF860_5_0.eot?#iefix') format('embedded-opentype'), url('fonts/2DF860_5_0.woff2') format('woff2'), url('fonts/2DF860_5_0.woff') format('woff'), url('fonts/2DF860_5_0.ttf') format('truetype'); }
+  src: url("fonts/2DF860_5_0.eot");
+  src: url("fonts/2DF860_5_0.eot?#iefix") format("embedded-opentype"), url("fonts/2DF860_5_0.woff2") format("woff2"), url("fonts/2DF860_5_0.woff") format("woff"), url("fonts/2DF860_5_0.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'LuloCleanFour-Bold';
-  src: url('fonts/2DF860_6_0.eot');
-  src: url('fonts/2DF860_6_0.eot?#iefix') format('embedded-opentype'), url('fonts/2DF860_6_0.woff2') format('woff2'), url('fonts/2DF860_6_0.woff') format('woff'), url('fonts/2DF860_6_0.ttf') format('truetype'); }
+  src: url("fonts/2DF860_6_0.eot");
+  src: url("fonts/2DF860_6_0.eot?#iefix") format("embedded-opentype"), url("fonts/2DF860_6_0.woff2") format("woff2"), url("fonts/2DF860_6_0.woff") format("woff"), url("fonts/2DF860_6_0.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'LuloCleanFour';
-  src: url('fonts/2DF860_7_0.eot');
-  src: url('fonts/2DF860_7_0.eot?#iefix') format('embedded-opentype'), url('fonts/2DF860_7_0.woff2') format('woff2'), url('fonts/2DF860_7_0.woff') format('woff'), url('fonts/2DF860_7_0.ttf') format('truetype'); }
+  src: url("fonts/2DF860_7_0.eot");
+  src: url("fonts/2DF860_7_0.eot?#iefix") format("embedded-opentype"), url("fonts/2DF860_7_0.woff2") format("woff2"), url("fonts/2DF860_7_0.woff") format("woff"), url("fonts/2DF860_7_0.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'LuloCleanTwo';
-  src: url('fonts/2DF860_8_0.eot');
-  src: url('fonts/2DF860_8_0.eot?#iefix') format('embedded-opentype'), url('fonts/2DF860_8_0.woff2') format('woff2'), url('fonts/2DF860_8_0.woff') format('woff'), url('fonts/2DF860_8_0.ttf') format('truetype'); }
+  src: url("fonts/2DF860_8_0.eot");
+  src: url("fonts/2DF860_8_0.eot?#iefix") format("embedded-opentype"), url("fonts/2DF860_8_0.woff2") format("woff2"), url("fonts/2DF860_8_0.woff") format("woff"), url("fonts/2DF860_8_0.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'LuloCleanTwo-Bold';
-  src: url('fonts/2DF860_9_0.eot');
-  src: url('fonts/2DF860_9_0.eot?#iefix') format('embedded-opentype'), url('fonts/2DF860_9_0.woff2') format('woff2'), url('fonts/2DF860_9_0.woff') format('woff'), url('fonts/2DF860_9_0.ttf') format('truetype'); }
+  src: url("fonts/2DF860_9_0.eot");
+  src: url("fonts/2DF860_9_0.eot?#iefix") format("embedded-opentype"), url("fonts/2DF860_9_0.woff2") format("woff2"), url("fonts/2DF860_9_0.woff") format("woff"), url("fonts/2DF860_9_0.ttf") format("truetype"); }
 
 body {
   background-color: #fdf6e9;
-  background-image: url('./extra/bg.jpg');
+  background-image: url("./extra/bg.jpg");
   font-size: 120%;
   font-family: "neutonextralight"; }
 
@@ -576,6 +613,7 @@ p {
     border-style: dashed; }
     .debug [data-trigger].fixed-placeholder * {
       opacity: .4; }
+
 .debug .fixed {
   background-color: rgba(255, 0, 255, 0.2); }
 
@@ -643,8 +681,10 @@ p {
   border-left: 0;
   border-right: 0;
   margin: 0; }
+
 .imgprv .imgprv-inner {
   padding: 2px 0 0 0; }
+
 .imgprv > img {
   padding: 5px 0;
   margin-bottom: -2px; }
@@ -686,9 +726,9 @@ p {
     font-size: 1.4rem; }
 
 .modal {
-  -webkit-transition: all .4s linear;
-  -moz-transition: all .4s linear;
-  transition: all .4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  transition: all 0.4s linear;
   background-color: rgba(44, 65, 100, 0.8); }
   .modal .modal-coords {
     position: absolute;
@@ -700,9 +740,9 @@ p {
 
 .isModalOpen .modal {
   pointer-events: auto;
-  -webkit-transition: all .4s linear;
-  -moz-transition: all .4s linear;
-  transition: all .4s linear; }
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  transition: all 0.4s linear; }
 
 .main {
   position: relative; }
@@ -820,7 +860,7 @@ body:not(.debug) .fixed-placeholder {
   border-radius: 99px;
   border: 1px solid rgba(250, 72, 97, 0.5); }
   .picto .picto-inner {
-    transform: scale(.7);
+    transform: scale(0.7);
     transform-origin: 50% 50%; }
 
 .picto--feet .picto-inner {
@@ -930,17 +970,21 @@ p.torque-event {
 .torqueLegend-mag-circles div {
   display: inline-block;
   color: #982636; }
+
 .torqueLegend-mag-circles p {
   display: inline-block;
   background-color: #982636;
   border-radius: 99px;
   margin: 0; }
+
 .torqueLegend-mag-circles p:nth-child(2) {
   width: 5px;
   height: 5px; }
+
 .torqueLegend-mag-circles p:nth-child(3) {
   width: 10px;
   height: 10px; }
+
 .torqueLegend-mag-circles p:nth-child(4) {
   width: 17px;
   height: 17px; }
